@@ -1,9 +1,51 @@
+                                                                     |
+                                                                     |-A1b3: LR annealing from 2.5E-5 to 1E-6
+                                                                     |
+                                                                     |-A1b2: LR = 2.5E-6
+                                                                     |
+                                                                     |-A1b1: LR = 2.5E-5-----A1b1a: PER: a=0.6,b=1    
+                                                                     |
+|---------------------A1b: Use the hyperparamters from DQN paper.-----
+|                     HIDDEN LAYER  = 250
+|                     BATCH_SIZE    = 32
+|                     LR            = 2.5E-4
+|                     EPSILON       = 0 to 0.995 with expoential decay
+|                     LOSS          = HUBER LOSS
+|                     OPTIMIZER     = RMS PROP
+|                     TARGET UPDATE = 15 MONTHS
+|
+|
+|
+|                                                                    |-A1a2: LR = 2.5E-6
+|                                                                    |
+|                                                                    |-A1a1: LR = 2.5E-5    
+|                                                                    |
+|---------------------A1a: Use the hyperparamters from DQN paper.----
+|                     HIDDEN LAYER  = 50
+|                     BATCH_SIZE    = 32
+|                     LR            = 2.5E-4
+|                     EPSILON       = 0 to 0.995 with expoential decay
+|                     LOSS          = HUBER LOSS
+|                     OPTIMIZER     = RMS PROP
+|                     TARGET UPDATE = 15 MONTHS
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
+|
 |
 |
 |	****************************************************************
 |	|---D0: More general reward function. DDQN with PER
 |	|
-|	|    C0: B0 with PER. Nor very successful
+|	|    C0: B0 with PER. Not very successful
 |	|    |
 |------ |   
 |	|    B0: More general Reward function
